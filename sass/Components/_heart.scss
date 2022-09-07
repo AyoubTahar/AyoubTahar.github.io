@@ -1,0 +1,23 @@
+@import '../Utils/variables';
+@import '../Utils/placeholders';
+@import '../Utils/mixins';
+
+/* position du coeur et son animation */
+
+span .fa-heart{
+    opacity: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: absolute;
+    color: transparent;
+    background-image: $background-gradient;
+    transition: 0.5s ease-in;
+    right: 10px;
+    top: 194px;
+
+    &:hover{
+        opacity: 1;
+        transform: scale(110%);
+    }
+}
+

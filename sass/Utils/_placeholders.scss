@@ -1,0 +1,20 @@
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-column{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+%animation-delay-menu{
+    @for $i from 2 to 6 {
+        &:nth-child(#{$i}){
+            animation-delay: $i* 0.5s;
+            -webkit-animation-delay: $i* 0.5s;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../Utils/variables';
+@import '../Utils/placeholders';
+@import '../Utils/mixins';
+
+/* mis en forme du logo qui apparait lors de l'animation des menus */
+
+%check{
+    border-radius: 50%;
+    background-color: white;
+    color: $tertaire;
+    padding: 5px;
+    border: none;
+}
+
